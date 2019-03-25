@@ -41,3 +41,14 @@ $static-font-path: '/assets/fonts/webfonts';
   left: 0;
 }
 
+
+// Fondo azul con curvas de nivel
+.element-style {
+  background-color: rgb(176, 196, 223);
+  }
+
+.slds-brand-band:before {
+    background-image: url(/assets/images/themes/oneSalesforce/banner-brand-default.png), linear-gradient(to top, rgba(175, 197, 222, 0) 0, #1B5F9E);
+  }
+
+  
