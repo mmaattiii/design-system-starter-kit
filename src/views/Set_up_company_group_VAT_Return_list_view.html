@@ -327,7 +327,7 @@
         <div class="slds-context-bar__primary">
           <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
             <div class="slds-context-bar__icon-action">
-              <button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Open App Launcher">
+                <a href="/app_launcher.html"><button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Open App Launcher">
                 <span class="slds-icon-waffle">
                   <span class="slds-r1"></span>
                   <span class="slds-r2"></span>
@@ -340,7 +340,7 @@
                   <span class="slds-r9"></span>
                 </span>
                 <span class="slds-assistive-text">Open App Launcher</span>
-              </button>
+              </button></a>
             </div>
             <span class="slds-context-bar__label-action slds-context-bar__app-name">
               <span class="slds-truncate" title="App Name">Accounting</span>
@@ -580,7 +580,7 @@
                 <ul class="slds-button-group-list">
                   <li>
                     <div class="slds-button-group" role="group">
-                      <a href="http://localhost:3000/New_group_VAT_Return.html"><button class="slds-button slds-button_neutral">New</button> </a>
+                      <a href="New_group_VAT_Return.html"><button class="slds-button slds-button_neutral">New</button> </a>
                       <button class="slds-button slds-button_neutral">Import</button>
                       <button class="slds-button slds-button_neutral ">Change Owner</button>
                     </div>
@@ -665,8 +665,8 @@
           
 
  <!-- tabla -->
-           <div class="slds-table_edit_container slds-table_cell-buffer slds-is-relative slds-table_fixed-layout slds-table_resizable-cols">
-            <table aria-multiselectable="true" class="slds-table slds-no-cell-focus slds-table_bordered slds-table_edit slds-table_fixed-layout slds-table_resizable-cols" role="grid" >
+           <div class="slds-table_edit_container slds-table_cell-buffer slds-is-relative slds-table_fixed-layout slds-table_resizable-cols slds-no-row-hover">
+            <table aria-multiselectable="true" class="slds-no-row-hover slds-table slds-no-cell-focus slds-table_bordered slds-table_edit slds-table_fixed-layout slds-table_resizable-cols" role="grid" >
               <thead>
                 <tr class="slds-line-height_reset">
                   <th class="" scope="col" style="width: 3.75rem;" >
@@ -749,12 +749,9 @@
               
               <tbody>
                 <tr class="slds-no-row-hover" style="height: 600px;"> 
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
+                    
+                  <td colspan="6"> <center><p>You haven't created any Company VAT Group yet.<br/> Try creating a new one.</center> </td>
+                  
                 </tr>
 
               </tbody>
