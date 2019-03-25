@@ -320,21 +320,17 @@
 
 
 
-  <!--
-    Placeholder to push the context bar down
-  -->
+  <!--Placeholder para mantener ocntenido debajo de bar más fondo-->
   <div class="app-header-placeholder"></div>
-
-  <!--
-    Navigation Bar component
-    https://www.lightningdesignsystem.com/components/global-navigation/
-  -->
+  <div class="slds-brand-band slds-brand-band_large"></div>
+  <div class="element-style"></div>
+  <!-- Navigation Bar component https://www.lightningdesignsystem.com/components/global-navigation -->
   <div style="height: 16rem;">
       <div class="slds-context-bar">
         <div class="slds-context-bar__primary">
           <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
             <div class="slds-context-bar__icon-action">
-              <button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Description of the icon when needed">
+              <button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Open App Launcher">
                 <span class="slds-icon-waffle">
                   <span class="slds-r1"></span>
                   <span class="slds-r2"></span>
@@ -359,7 +355,7 @@
             <li class="slds-context-bar__item slds-is-active">
               <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Home">
                 <span class="slds-assistive-text">Current Page:</span>
-                <span class="slds-truncate" title="Home">Collections Workspace</span>
+                <span class="slds-truncate" title="Home">Set Up Company VAT Group</span>
               </a>
             </li>
             <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_hover">
@@ -540,12 +536,290 @@
         </nav>
       </div>
     </div>
-
   <main class="app-wrapper slds-template_default">
     {% block content %}
       <!-- Content from HTML files gets injected here -->
+
+      <!-- PAGE HEADER -->
+      <!-- header VAT Return report edit = page header -->
+
+      <div class="slds-page-header">
+        <div class="slds-page-header__row">
+          <div class="slds-page-header__col-title">
+            <div class="slds-media">
+              <div class="slds-media__figure">
+                <span class="slds-icon_container slds-icon-standard-opportunity" title="opportunity">
+                  <svg class="slds-icon slds-page-header__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#display_text" />
+                  </svg>
+                  <span class="slds-assistive-text">opportunity</span>
+                </span>
+              </div>
+              <div class="slds-media__body">
+                <div class="slds-page-header__name">
+                  <div class="slds-page-header__name-title">
+                    <h1>
+                      <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets">Company VAT Group Edit</span>
+                    </h1>
+                  </div>
+                </div>
+                <p class="slds-page-header__name-meta">New VAT Return Report</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+  <!-- page content = card -->
+      
+      <article class="slds-card slds-grid slds-grid_vertical slds-m-top_medium">
+
+        <!-- title and buttons -->
+        <div class="slds-col">
+          <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate slds-col">
+                <h2 class="slds-card__header-title">
+                  <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Accounts">
+                    <span>Company VAT Group Edit</span>
+                  </a>
+                </h2>
+            </header>
+            <div class="slds-clearfix">
+                <div class="slds-clearfix">
+                  <div class="slds-float_right">
+                    <div class="slds-col">
+                      <button class="slds-button slds-button_neutral">Save</button>
+                      <button class="slds-button slds-button_neutral">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+          <!-- CONTENT -->
+
+        <div class="slds-col slds-p-horizontal_medium">
+          <div class="slds-grid slds-grid_vertical">
+              <div class="slds-col">
+                  <div class="slds-section slds-is-open">
+                      <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Section Title">Information</span>
+                      </h3>
+                      <div aria-hidden="false" class="slds-section__content">
+                          <div class="slds-grid slds-grid_vertical ">
+                              <div class="slds-col slds-m-vertical_medium">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-clearfix">
+                                            <div class="slds-clearfix">
+                                              <div class="slds-float_right">
+                                                  <label class="slds-form-element__label" for="form-element-01">Group Name</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-clearfix">
+                                            <div class="slds-clearfix">
+                                              <div class="slds-float_left">
+                                                  <div class="slds-form-element ">
+                                                      <div class="slds-form-element__control" style="width:140%" >
+                                                        <input type="text" id="form-element-01" placeholder="My VAT Group" class="slds-input" />
+                                                      </div>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-12">
+                                        <div class="slds-clearfix">
+                                            <div class="slds-clearfix">
+                                              <div class="slds-float_right">
+                                                  <label class="slds-form-element__label" for="form-element-03">
+                                                      <abbr class="slds-required" title="required">* </abbr>Select Primay Company</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="slds-col slds-size_4-of-12">
+                                        <div class="slds-clearfix">
+                                            <div class="slds-clearfix">
+                                              <div class="slds-float_left">
+                                                      <div class="slds-form-element">
+                                                        <div class="slds-form-element__control" style="width:140%">
+                                                          <div class="slds-combobox_container">
+                                                            <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox">
+                                                              <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                                                                <input class="slds-input slds-combobox__input" id="combobox-id-1" aria-autocomplete="list" aria-controls="listbox-id-1" autocomplete="off" role="textbox" type="text" placeholder="Company 3" value="" />
+                                                                <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+                                                                  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+                                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                                                                  </svg>
+                                                                </span>
+                                                              </div>
+                                                             
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="slds-col slds-m-vertical_medium">
+                                  <div class="slds-grid slds-gutters">
+                                      <div class="slds-col slds-size_3-of-12">
+                                          <div class="slds-clearfix">
+                                              <div class="slds-clearfix">
+                                                <div class="slds-float_right">
+                                                    <label class="slds-form-element__label" for="form-element-03">
+                                                        <abbr class="slds-required" title="required">* </abbr>VAT Registration Number</label>      
+                                                </div>
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <div class="slds-col slds-size_3-of-12">
+                                          <div class="slds-clearfix">
+                                              <div class="slds-clearfix">
+                                                <div class="slds-float_left">
+                                                    <div class="slds-form-element ">
+                                                        <div class="slds-form-element__control" style="width:140%" >
+                                                          <input type="text" id="form-element-01" placeholder="123456789" class="slds-input" />
+                                                        </div>
+                                                      </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <div class="slds-col slds-size_2-of-12">
+                                          <div class="slds-clearfix">
+                                              <div class="slds-clearfix">
+                                                <div class="slds-float_right">
+                                                    <label class="slds-form-element__label" for="form-element-03">
+                                                        <abbr class="slds-required" title="required">* </abbr>Add or remove Companies from Group</label> 
+                                                </div>
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <div class="slds-col slds-size_4-of-12">
+                                          <div class="slds-clearfix">
+                                              <div class="slds-clearfix">
+                                                <div class="slds-float_left">
+                                                    <div class="slds-form-element" role="group" aria-labelledby="picklist-group-label">
+                                                        
+                                                        <div class="slds-form-element__control">
+                                                          <div class="slds-dueling-list">
+                                                            <div class="slds-assistive-text" id="drag-live-region" aria-live="assertive"></div>
+                                                            <div class="slds-assistive-text" id="option-drag-label">Press space bar when on an item, to move it within the list. CMD plus left and right arrow keys, to move items between lists.</div>
+                                                            <div class="slds-dueling-list__column ">
+                                                              <span class="slds-form-element__label" id="label-105">VAT Companies</span>
+                                                              <div class="slds-dueling-list__options">
+                                                                <ul aria-describedby="option-drag-label" aria-labelledby="label-105" aria-multiselectable="true" class="slds-listbox slds-listbox_vertical" role="listbox">
+                                                                  <li role="presentation" class="slds-listbox__item">
+                                                                    <div class="slds-listbox__option slds-listbox__option_plain slds-media slds-media_small slds-media_inline" aria-selected="false" draggable="true" role="option" tabindex="-1">
+                                                                      <span class="slds-media__body">
+                                                                        <span class="slds-truncate" title="German">Company 4</span>
+                                                                      </span>
+                                                                    </div>
+                                                                  </li>
+                                                                  <li role="presentation" class="slds-listbox__item">
+                                                                    <div class="slds-listbox__option slds-listbox__option_plain slds-media slds-media_small slds-media_inline" aria-selected="false" draggable="true" role="option" tabindex="-1">
+                                                                      <span class="slds-media__body">
+                                                                        <span class="slds-truncate" title="Hindi">Company 5</span>
+                                                                      </span>
+                                                                    </div>
+                                                                  </li>
+                                                                  <li role="presentation" class="slds-listbox__item">
+                                                                    <div class="slds-listbox__option slds-listbox__option_plain slds-media slds-media_small slds-media_inline" aria-selected="false" draggable="true" role="option" tabindex="-1">
+                                                                      <span class="slds-media__body">
+                                                                        <span class="slds-truncate" title="Tobagonian Creole English">Company 6 </span>
+                                                                      </span>
+                                                                    </div>
+                                                                  </li>
+                                                                </ul>
+                                                              </div>
+                                                            </div>
+                                                            <div class="slds-dueling-list__column">
+                                                              <button class="slds-button slds-button_icon slds-button_icon-container" title="Move Selection to Selected Languages">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                  <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Move Selection to Selected Languages</span>
+                                                              </button>
+                                                              <button class="slds-button slds-button_icon slds-button_icon-container" title="Move Selection to Available Languages">
+                                                                <svg class="slds-button__icon" aria-hidden="true">
+                                                                  <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#left"></use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Move Selection to Available Languages</span>
+                                                              </button>
+                                                            </div>
+                                                            <div class="slds-dueling-list__column slds-dueling-list__column_responsive">
+                                                              <span class="slds-form-element__label" id="label-106">Selected Companies</span>
+                                                              <div class="slds-dueling-list__options">
+                                                                <ul aria-describedby="option-drag-label" aria-labelledby="label-106" aria-multiselectable="true" class="slds-listbox slds-listbox_vertical" role="listbox">
+                                                                  <li role="presentation" class="slds-listbox__item">
+                                                                    <div class="slds-listbox__option slds-listbox__option_plain slds-media slds-media_small slds-media_inline" aria-selected="false" draggable="true" role="option" tabindex="0">
+                                                                      <span class="slds-media__body">
+                                                                        <span class="slds-truncate" title="Chinese">Company 3 (Primary Company)</span>
+                                                                      </span>
+                                                                    </div>
+                                                                  </li>
+                                                                  <li role="presentation" class="slds-listbox__item">
+                                                                    <div class="slds-listbox__option slds-listbox__option_plain slds-media slds-media_small slds-media_inline" aria-selected="false" draggable="true" role="option" tabindex="-1">
+                                                                      <span class="slds-media__body">
+                                                                        <span class="slds-truncate" title="English">Company 1</span>
+                                                                      </span>
+                                                                    </div>
+                                                                  </li>
+                                                                  <li role="presentation" class="slds-listbox__item">
+                                                                    <div class="slds-listbox__option slds-listbox__option_plain slds-media slds-media_small slds-media_inline" aria-selected="false" draggable="true" role="option" tabindex="-1">
+                                                                        <span class="slds-media__body">
+                                                                        <span class="slds-truncate" title="Dutch">Company 2</span>
+                                                                        </span>
+                                                                    </div>
+                                                                    </li>
+                                                                </ul>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                      </div>
+                                    </div>
+                              </div>
+                              
+                            </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="slds-col ">
+                  <div class="slds-clearfix">
+                      <div class="slds-clearfix">
+                        <div class="slds-align_absolute-center slds-p-vertical_medium">
+                            <a href="http://localhost:3000/Set_up_company_group_VAT_Return_list_view_2.html">
+                                <button class="slds-button slds-button_neutral">Save</button></a>
+                            <button class="slds-button slds-button_neutral">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+
+
+
+      </article>
+
     {% endblock %}
-  </main>
+  </main> 
   <script src="/scripts/app.js"></script>
   <script src="/scripts/vendor/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>

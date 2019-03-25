@@ -321,10 +321,11 @@
 
 
   <!--
-    Placeholder to push the context bar down
+    Placeholder para mantener ocntenido debajo de bar más fondo
   -->
   <div class="app-header-placeholder"></div>
-
+  <div class="slds-brand-band slds-brand-band_large"></div>
+  <div class="element-style"></div>
   <!--
     Navigation Bar component
     https://www.lightningdesignsystem.com/components/global-navigation/
@@ -540,12 +541,11 @@
         </nav>
       </div>
     </div>
-
   <main class="app-wrapper slds-template_default">
     {% block content %}
       <!-- Content from HTML files gets injected here -->
     {% endblock %}
-  </main>
+  </main> 
   <script src="/scripts/app.js"></script>
   <script src="/scripts/vendor/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
