@@ -12,10 +12,7 @@
   <link rel="stylesheet" href="/styles/index.css" />
 </head>
 <body>
-  <!--
-    Base Global Header component
-    https://www.lightningdesignsystem.com/components/global-header/
-  -->
+  <!--Base Global Header component -->
 
   <header class="slds-global-header_container">
       <a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text_focus">Skip to Navigation</a>
@@ -322,7 +319,7 @@
 
   <!--Placeholder para mantener ocntenido debajo de bar más fondo-->
   <div class="app-header-placeholder"></div>
-  <!-- <div class="slds-brand-band slds-brand-band_large"></div> -->
+  <div class="slds-brand-band slds-brand-band_large"></div>
   <div class="element-style"></div>
   <!-- Navigation Bar component https://www.lightningdesignsystem.com/components/global-navigation -->
   <div style="height: 16rem;">
@@ -331,19 +328,19 @@
           <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
             <div class="slds-context-bar__icon-action">
                 <a href="/app_launcher.html"><button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Open App Launcher">
-                    <span class="slds-icon-waffle">
-                      <span class="slds-r1"></span>
-                      <span class="slds-r2"></span>
-                      <span class="slds-r3"></span>
-                      <span class="slds-r4"></span>
-                      <span class="slds-r5"></span>
-                      <span class="slds-r6"></span>
-                      <span class="slds-r7"></span>
-                      <span class="slds-r8"></span>
-                      <span class="slds-r9"></span>
-                    </span>
-                    <span class="slds-assistive-text">Open App Launcher</span>
-                  </button></a>
+                <span class="slds-icon-waffle">
+                  <span class="slds-r1"></span>
+                  <span class="slds-r2"></span>
+                  <span class="slds-r3"></span>
+                  <span class="slds-r4"></span>
+                  <span class="slds-r5"></span>
+                  <span class="slds-r6"></span>
+                  <span class="slds-r7"></span>
+                  <span class="slds-r8"></span>
+                  <span class="slds-r9"></span>
+                </span>
+                <span class="slds-assistive-text">Open App Launcher</span>
+              </button></a>
             </div>
             <span class="slds-context-bar__label-action slds-context-bar__app-name">
               <span class="slds-truncate" title="App Name">Accounting</span>
@@ -538,10 +535,11 @@
     </div>
   <main class="app-wrapper slds-template_default">
     {% block content %}
-      <!-- Content from HTML files gets injected here -->
+
+<!-- Content from HTML files gets injected here -->
 
       <!-- PAGE HEADER -->
-      <!-- header VAT Return report edit = page header -->
+      <!-- header list view = oage header -->
 
       <div class="slds-page-header">
         <div class="slds-page-header__row">
@@ -558,11 +556,11 @@
                 <div class="slds-page-header__name">
                   <div class="slds-page-header__name-title">
                     <h1>
-                      <span>Company VAT Group</span>
-                      <span class="slds-page-header__title slds-truncate" title="Recently Viewed">New Company VAT Group</span>
+                      <span>Company VAT Groups</span>
+                      <span class="slds-page-header__title slds-truncate" title="All">All</span>
                     </h1>
                   </div>
-                  <!-- <div class="slds-page-header__name-switcher">
+                  <div class="slds-page-header__name-switcher">
                     <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
                       <button class="slds-button slds-button_icon slds-button_icon-small" aria-haspopup="true" title="Switch list view">
                         <svg class="slds-button__icon slds-icon_x-small" aria-hidden="true">
@@ -571,7 +569,7 @@
                         <span class="slds-assistive-text">Switch list view</span>
                       </button>
                     </div>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -580,49 +578,21 @@
             <div class="slds-page-header__controls">
               <div class="slds-page-header__control">
                 <ul class="slds-button-group-list">
-                    <div class="slds-button-group" role="group">
-                        <button class="slds-button slds-button_neutral">Cancel</button>
-                        <a href="Set_up_company_group_VAT_Return_list_view_2.html"><button class="slds-button slds-button_brand">Save</button></a>
-                    </div>
-                  <!-- <li>
-                    <button class="slds-button slds-button_neutral">Cancel</button>
-                  </li>
                   <li>
-                    <button class="slds-button slds-button_brand">Save</button>
-                     <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
-                      <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="More Actions">
-                        <svg class="slds-button__icon" aria-hidden="true">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down" />
-                        </svg>
-                        <span class="slds-assistive-text">More Actions</span>
-                      </button>
-                    </div> 
-                  </li> -->
-                  <!-- <div class="slds-page-header__control">
-                    <button class="slds-button slds-button_icon slds-button_icon-border-filled" title="Filter">
-                      <svg class="slds-button__icon" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#filter" />
-                      </svg>
-                      <span class="slds-assistive-text">Filter</span>
-                    </button>
-                  </div> -->
-                  <div class="slds-page-header__control">
-                    <button class="slds-button slds-button_icon slds-button_icon-border-filled" title="Help">
-                      <svg class="slds-button__icon" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#help" />
-                      </svg>
-                      <span class="slds-assistive-text">Help</span>
-                    </button>
-                  </div>
+                    <div class="slds-button-group" role="group">
+                      <a href="VFL_New_group_VAT_Return.html"><button class="slds-button slds-button_neutral">New</button> </a>
+                      <button class="slds-button slds-button_neutral">Import</button>
+                      <button class="slds-button slds-button_neutral ">Change Owner</button>
+                    </div>
+                  </li>
                 </ul>
-                
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="slds-page-header__row">
+        <div class="slds-page-header__row">
           <div class="slds-page-header__col-meta">
-            <p class="slds-page-header__meta-text">10 items • Updated 13 minutes ago</p>
+            <p class="slds-page-header__meta-text">0 items • Sorted by Name • Filtered by all VAT Return Groups - Status • Updated a few seconds ago</p>
           </div>
           <div class="slds-page-header__col-controls">
             <div class="slds-page-header__controls">
@@ -690,255 +660,160 @@
               </div>
             </div>
           </div>
-        </div> -->
-      </div>
-
-      
-
-
-  <!-- page content = card -->
-      
-      <article class="slds-card slds-m-top_medium slds-p-around_large">
-
-          <!-- CONTENT -->
-
-          <div class="slds-section slds-is-open">
-                <h3 class="slds-section__title slds-theme_shade">
-                  <span class="slds-truncate slds-p-horizontal_small" title="Section Title">Group Information</span>
-                </h3>
-                <div aria-hidden="false" class="slds-section__content">
-          <div class="slds-grid_vertical slds-gutters ">
-                    
-            
-                <div class="slds-col">
-                    <div class="slds-grid">
-                        <div class="slds-col slds-form-element">
-                            <label class="slds-form-element__label" for="form-element-01">Group Name</label>
-                            <div class="slds-form-element__control">
-                                <input type="text" id="form-element-01" placeholder="Type Name" class="slds-input" />
-                            </div>
-                        </div>
-                        <div class="slds-col slds-form-element">
-                            <label class="slds-form-element__label" for="form-element-01">VAT Registration Number</label>
-                            <div class="slds-form-element__control">
-                                <input type="text" id="form-element-01" placeholder="Type VAT Registration Number" class="slds-input" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slds-col slds-p-around_medium">
-                            
-                        
-          <!-- Data table -->              
-                        
-                        <table class="slds-table slds-m-top_large slds-table_bordered">
-                                    <thead>
-                                      <tr class="slds-line-height_reset">
-                                        <th class="" scope="col">
-                                          <div class="slds-truncate" title="Opportunity Name">Account</div>
-                                        </th>
-                                        <th class="" style="width: 16rem;" scope="col">
-                                          <div class="slds-truncate" title="Account Name">Include in VAT Group</div>
-                                        </th>
-                                        <th class="" style="width: 3.75rem;" scope="col">
-                                          <div class="slds-truncate" title="Close Date">Make Primary Company</div>
-                                        </th>
-                                    </thead>
-                                    <tbody>
-                                      <tr class="slds-hint-parent">
-                                        <th data-label="Account" scope="row">
-                                          <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 1</a></div>
-                                        </th>
-                                        <td data-label="Account Name">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <div class="slds-checkbox">
-                                                        <input type="checkbox" name="options" id="checkbox-1" value="checkbox-1" />
-                                                        <label class="slds-checkbox__label" for="checkbox-1">
-                                                            <span class="slds-checkbox_faux"></span>
-                                                            <span class="slds-form-element__label"></span>
-                                                        </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                        </td>
-                                        <td data-label="Close Date">
-                                            <fieldset class="slds-form-element">
-                                                 <div class="slds-form-element__control">
-                                                    <span class="slds-radio">
-                                                        <input type="radio" id="radio-1" name="options" value="radio-1" />
-                                                        <label class="slds-radio__label" for="radio-1">
-                                                            <span class="slds-radio_faux"></span>
-                                                    </span>
-                                                </div>
-                                            </fieldset>   
-                                        </td>
-                                      </tr>
-                                      <tr class="slds-hint-parent">
-                                            <th data-label="Account" scope="row">
-                                              <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 2</a></div>
-                                            </th>
-                                            <td data-label="Account Name">
-                                                    <div class="slds-form-element">
-                                                        <div class="slds-form-element__control">
-                                                            <div class="slds-checkbox">
-                                                            <input type="checkbox" name="options" id="checkbox-3" value="checkbox-3" />
-                                                            <label class="slds-checkbox__label" for="checkbox-3">
-                                                                <span class="slds-checkbox_faux"></span>
-                                                                <span class="slds-form-element__label"></span>
-                                                            </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                            </td>
-                                            <td data-label="Close Date">
-                                                    <fieldset class="slds-form-element">
-                                                        <div class="slds-form-element__control">
-                                                            <span class="slds-radio">
-                                                                <input type="radio" id="radio-2" name="options" value="radio-2" />
-                                                                <label class="slds-radio__label" for="radio-2">
-                                                                    <span class="slds-radio_faux"></span>
-                                                            </span>
-                                                        </div>
-                                                    </fieldset>
-                                            </td>
-                                          </tr>
-                                          <tr class="slds-hint-parent">
-                                                <th data-label="Account" scope="row">
-                                                  <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 3</a></div>
-                                                </th>
-                                                <td data-label="Account Name">
-                                                        <div class="slds-form-element">
-                                                            <div class="slds-form-element__control">
-                                                                <div class="slds-checkbox">
-                                                                <input type="checkbox" name="options" id="checkbox-5" value="checkbox-5" />
-                                                                <label class="slds-checkbox__label" for="checkbox-5">
-                                                                    <span class="slds-checkbox_faux"></span>
-                                                                    <span class="slds-form-element__label"></span>
-                                                                </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                </td>
-                                                <td data-label="Close Date">
-                                                        <fieldset class="slds-form-element">
-                                                            <div class="slds-form-element__control">
-                                                                <span class="slds-radio">
-                                                                    <input type="radio" id="radio-3" name="options" value="radio-3" />
-                                                                    <label class="slds-radio__label" for="radio-3">
-                                                                        <span class="slds-radio_faux"></span>
-                                                                </span>
-                                                            </div>
-                                                        </fieldset>
-                                                </td>
-                                              </tr>
-                                              <tr class="slds-hint-parent">
-                                                    <th data-label="Account" scope="row">
-                                                      <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 4</a></div>
-                                                    </th>
-                                                    <td data-label="Account Name">
-                                                            <div class="slds-form-element">
-                                                                <div class="slds-form-element__control">
-                                                                    <div class="slds-checkbox">
-                                                                    <input type="checkbox" name="options" id="checkbox-7" value="checkbox-7" />
-                                                                    <label class="slds-checkbox__label" for="checkbox-7">
-                                                                        <span class="slds-checkbox_faux"></span>
-                                                                        <span class="slds-form-element__label"></span>
-                                                                    </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                    </td>
-                                                    <td data-label="Close Date">
-                                                            <fieldset class="slds-form-element">
-                                                                <div class="slds-form-element__control">
-                                                                    <span class="slds-radio">
-                                                                        <input type="radio" id="radio-4" name="options" value="radio-4" />
-                                                                        <label class="slds-radio__label" for="radio-4">
-                                                                            <span class="slds-radio_faux"></span>
-                                                                    </span>
-                                                                </div>
-                                                            </fieldset>
-                                                    </td>
-                                                  </tr>
-                                                  <tr class="slds-hint-parent">
-                                                        <th data-label="Account" scope="row">
-                                                          <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 5</a></div>
-                                                        </th>
-                                                        <td data-label="Account Name">
-                                                                <div class="slds-form-element">
-                                                                    <div class="slds-form-element__control">
-                                                                        <div class="slds-checkbox">
-                                                                        <input type="checkbox" name="options" id="checkbox-9" value="checkbox-9" />
-                                                                        <label class="slds-checkbox__label" for="checkbox-9">
-                                                                            <span class="slds-checkbox_faux"></span>
-                                                                            <span class="slds-form-element__label"></span>
-                                                                        </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                        </td>
-                                                        <td data-label="Close Date">
-                                                                <fieldset class="slds-form-element">
-                                                                    <div class="slds-form-element__control">
-                                                                        <span class="slds-radio">
-                                                                            <input type="radio" id="radio-5" name="options" value="radio-5" />
-                                                                            <label class="slds-radio__label" for="radio-5">
-                                                                                <span class="slds-radio_faux"></span>
-                                                                        </span>
-                                                                    </div>
-                                                                </fieldset>
-                                                        </td>
-                                                      </tr>
-                                                      <tr class="slds-hint-parent">
-                                                            <th data-label="Account" scope="row">
-                                                              <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 6</a></div>
-                                                            </th>
-                                                            <td data-label="Account Name">
-                                                                    <div class="slds-form-element">
-                                                                        <div class="slds-form-element__control">
-                                                                            <div class="slds-checkbox">
-                                                                            <input type="checkbox" name="options" id="checkbox-9" value="checkbox-9" />
-                                                                            <label class="slds-checkbox__label" for="checkbox-9">
-                                                                                <span class="slds-checkbox_faux"></span>
-                                                                                <span class="slds-form-element__label"></span>
-                                                                            </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                            </td>
-                                                            <td data-label="Close Date">
-                                                                    <fieldset class="slds-form-element">
-                                                                        <div class="slds-form-element__control">
-                                                                            <span class="slds-radio">
-                                                                                <input type="radio" id="radio-6" name="options" value="radio-6" />
-                                                                                <label class="slds-radio__label" for="radio-6">
-                                                                                    <span class="slds-radio_faux"></span>
-                                                                            </span>
-                                                                        </div>
-                                                                    </fieldset>
-                                                            </td>
-                                                          </tr>
-                                                     
-                                    </tbody>
-                            </table>  
         </div>
-    </div>                  
+      </div>
+          
 
+ <!-- tabla -->
+           <div class="slds-table_edit_container slds-table_cell-buffer slds-is-relative slds-table_fixed-layout slds-table_resizable-cols slds-no-row-hover">
+            <table aria-multiselectable="true" class="slds-no-row-hover slds-table slds-no-cell-focus slds-table_bordered slds-table_edit slds-table_fixed-layout slds-table_resizable-cols" role="grid" >
+              <thead>
+                <tr class="slds-line-height_reset">
+                  <th class="" scope="col" style="width: 3.75rem;" >
+                    <div class="slds-truncate slds-assistive-text" title="Errors">Errors</div>
+                  </th>
+                  <th class="" scope="col" style="width: 2rem;" >
+                    <span id="column-group-header" class="slds-assistive-text">Choose a row</span>
+                    <div class="slds-th__action slds-th__action_form">
+                      <div class="slds-checkbox">
+                        <input type="checkbox" name="options" id="checkbox-29" tabindex="-1" aria-labelledby="check-select-all-label column-group-header" value="checkbox-29" />
+                        <label class="slds-checkbox__label" for="checkbox-29" id="check-select-all-label">
+                          <span class="slds-checkbox_faux"></span>
+                          <span class="slds-form-element__label slds-assistive-text">Select All</span>
+                        </label>
+                      </div>
+                    </div>
+                  </th>
+                  <th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"  >
+                    <a class="slds-th__action slds-text-link_reset" href="javascript:void(0);" role="button" tabindex="-1">
+                      <span class="slds-assistive-text">Sort by: </span>
+                      <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                        <span class="slds-truncate" title="PERIOD">Name</span>
+                        <span class="slds-icon_container slds-icon-utility-arrowdown">
+                          <svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown" />
+                          </svg>
+                        </span>
+                      </div>
+                    </a>
+                    <div class="slds-resizable">
+                      <input aria-label="Name column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-50" max="1000" min="20" tabindex="-1" type="range" />
+                      <span class="slds-resizable__handle">
+                        <span class="slds-resizable__divider"></span>
+                      </span>
+                    </div>
+                  </th>
+                  <th aria-label="Account Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col" >
+                    <a class="slds-th__action slds-text-link_reset" href="javascript:void(0);" role="button" tabindex="-1">
+                      <span class="slds-assistive-text">Sort by: </span>
+                      <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                        <span class="slds-truncate" title="Account Name">VAT registration Number</span>
+                        <span class="slds-icon_container slds-icon-utility-arrowdown">
+                          <svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown" />
+                          </svg>
+                        </span>
+                      </div>
+                    </a>
+                    <div class="slds-resizable">
+                      <input aria-label="Account Name column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-51" max="1000" min="20" tabindex="-1" type="range" />
+                      <span class="slds-resizable__handle">
+                        <span class="slds-resizable__divider"></span>
+                      </span>
+                    </div>
+                  </th>
+                  <th aria-label="Close Date" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col">
+                    <a class="slds-th__action slds-text-link_reset" href="javascript:void(0);" role="button" tabindex="-1">
+                      <span class="slds-assistive-text">Sort by: </span>
+                      <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+                        <span class="slds-truncate" title="Close Date">Primary Company</span>
+                        <span class="slds-icon_container slds-icon-utility-arrowdown">
+                          <svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown" />
+                          </svg>
+                        </span>
+                      </div>
+                    </a>
+                </th>
+                <th aria-label="Close Date" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col" style="width: 3.75rem;">
+                    <div class="slds-resizable" >
+                      <input aria-label="Close Date column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-52" max="1000" min="20" tabindex="-1" type="range" />
+                      <span class="slds-resizable__handle">
+                        <span class="slds-resizable__divider"></span>
+                      </span>
+                    </div>
+                </th>
+                  
+                </tr>
+              </thead>
+              
+              <tbody>
+                <tr class="slds-no-row-hover" style="height: 600px;"> 
+                    
+                  <td colspan="6"> <center><p>You haven't created any Company VAT Group yet.<br/> Try creating a new one.</center> </td>
+                  
+                </tr>
 
-        <div class="slds-section slds-is-open slds-m-horizontal_small">
-                <h3 class="slds-section__title slds-theme_shade">
-                    <span class="slds-truncate slds-p-horizontal_small" title="Section Title">Description Information</span>
-                </h3>
-                    <div aria-hidden="false" class="slds-section__content">
-                    <div class="slds-form-element slds-form-element_stacked">
-                        <label class="slds-form-element__label" for="stacked-input-id-02">Description</label>
-                        <div class="slds-form-element__control">
-                            <textarea id="stacked-input-id-02" placeholder="Group Description" class="slds-textarea"></textarea>
-                        </div>
-                    </div>
-                    </div>
-            </div>                      
-      </article>
+              </tbody>
+              
+           <!-- ROWS DE LA TABLA PA ENCENDER DESPUÉS
+                <tbody> 
+                <tr aria-selected="false" class="slds-hint-parent slds-no-row-hover">
+                  <td class="slds-cell-edit slds-cell-error slds-no-row-hover" role="gridcell">
+                    
+                    <span class="slds-row-number slds-text-body_small slds-text-color_weak"></span>
+                  </td>
+                  <td class="slds-cell-edit" role="gridcell">
+                  </td>
+                  <th class="slds-cell-edit" scope="row" tabindex="0">
+                    <span class="slds-grid slds-grid_align-spread"><a class="slds-truncate" href="javascript:void(0);" id="link-01" tabindex="-1" title="Acme - 1,200 Widgets"></a>
+                      <button class="slds-button slds-button_icon slds-cell-edit__button slds-m-left_x-small" tabindex="-1" title="Edit Name of Acme - 1,200 Widgets">
+                        <svg class="slds-button__icon slds-button__icon_hint slds-button__icon_edit" aria-hidden="true">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit" />
+                        </svg>
+                        <span class="slds-assistive-text">Edit Name of Acme - 1,200 Widgets</span>
+                      </button>
+                    </span>
+                  </th>
+                  <td class="slds-cell-edit" role="gridcell">
+                    <span class="slds-grid slds-grid_align-spread">
+                      <span class="slds-truncate" title="Acme">Reconciled</span>
+                      <button class="slds-button slds-button_icon slds-cell-edit__button slds-m-left_x-small" tabindex="-1" title="Edit Account Name of Acme - 1,200 Widgets">
+                        <svg class="slds-button__icon slds-button__icon_hint slds-button__icon_edit" aria-hidden="true">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit" />
+                        </svg>
+                        <span class="slds-assistive-text">Edit Account Name of Acme - 1,200 Widgets</span>
+                      </button>
+                    </span>
+                  </td>
+                  <td class="slds-cell-edit" role="gridcell">
+                    <span class="slds-grid slds-grid_align-spread">
+                      <span class="slds-truncate" title="4/10/15">Merlin Technologies Ltd UK</span>
+                      <button class="slds-button slds-button_icon slds-cell-edit__button slds-m-left_x-small" tabindex="-1" title="Edit Close Date of Acme - 1,200 Widgets">
+                        <svg class="slds-button__icon slds-button__icon_hint slds-button__icon_edit" aria-hidden="true">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit" />
+                        </svg>
+                        <span class="slds-assistive-text">Edit Close Date of Acme - 1,200 Widgets</span>
+                      </button>
+                    </span>
+                  </td>
+                  
+                  <td class="slds-cell-edit" role="gridcell" >
+                    <button class="slds-button slds-button_icon slds-button_icon-border-filled slds-button_icon-x-small" aria-haspopup="true" tabindex="-1" title="More Actions">
+                      <svg class="slds-button__icon slds-button__icon_hint slds-button__icon_small" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down" />
+                      </svg>
+                      <span class="slds-assistive-text">More actions for Acme - 1,200 Widgets</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>  -->
+        
+
+            </table>
+          </div>
+          </div>
+          </article>      
 
     {% endblock %}
   </main> 
