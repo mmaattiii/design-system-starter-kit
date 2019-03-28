@@ -543,7 +543,7 @@
       <!-- PAGE HEADER -->
       <!-- header VAT Return report edit = page header -->
 
-      <div class="slds-page-header">
+      <div class="slds-page-header slds-m-bottom_x-small">
         <div class="slds-page-header__row">
           <div class="slds-page-header__col-title">
             <div class="slds-media">
@@ -693,12 +693,12 @@
         </div> -->
       </div>
 
-      
+      <a href="Set_up_company_group_VAT_Return_list_viewOP1.html">Back to list: Company VAT Group</a>
 
 
   <!-- page content = card -->
       
-      <article class="slds-card slds-m-top_medium slds-p-around_large">
+      <article class="slds-card  slds-p-around_large">
 
           <!-- CONTENT -->
 
@@ -713,13 +713,15 @@
                 <div class="slds-col">
                     <div class="slds-grid">
                         <div class="slds-col slds-form-element">
-                            <label class="slds-form-element__label" for="form-element-01">Group Name</label>
+                            <label class="slds-form-element__label" for="form-element-03">
+                                <abbr class="slds-required" title="required">* </abbr>Group Name</label>
                             <div class="slds-form-element__control">
                                 <input type="text" id="form-element-01" placeholder="Type Name" class="slds-input" />
                             </div>
                         </div>
                         <div class="slds-col slds-form-element">
-                            <label class="slds-form-element__label" for="form-element-01">VAT Registration Number</label>
+                            <label class="slds-form-element__label" for="form-element-03">
+                                <abbr class="slds-required" title="required">* </abbr>VAT Registration Number</label>
                             <div class="slds-form-element__control">
                                 <input type="text" id="form-element-01" placeholder="Type VAT Registration Number" class="slds-input" />
                             </div>
@@ -728,32 +730,125 @@
                     <div class="slds-col slds-p-around_medium">
                             
                         
-          <!-- Data table -->              
-                        
-                        <table class="slds-table slds-m-top_large slds-table_bordered">
-                                    <thead>
-                                      <tr class="slds-line-height_reset">
-                                        <th class="" scope="col">
-                                          <div class="slds-truncate" title="Opportunity Name">Account</div>
-                                        </th>
-                                        <th class="" style="width: 16rem;" scope="col">
-                                          <div class="slds-truncate" title="Account Name">Include in VAT Group</div>
-                                        </th>
-                                        <th class="" style="width: 3.75rem;" scope="col">
-                                          <div class="slds-truncate" title="Close Date">Make Primary Company</div>
-                                        </th>
-                                    </thead>
-                                    <tbody>
-                                      <tr class="slds-hint-parent">
+          <!-- Data table -->   
+          <div class="slds-form-element">
+              <label class="slds-form-element__label" for="form-element-03">
+                  <abbr class="slds-required" title="required">* </abbr>Select VAT Companies</label>
+          </div>           
+
+          <article class="slds-card slds-card_boundary"> 
+             
+            <table class="slds-table slds-m-top_large slds-table_bordered">
+                        <thead>
+                          <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                              <div class="slds-truncate" title="Opportunity Name">Account</div>
+                            </th>
+                            <th class="" style="width: 16rem;" scope="col">
+                              <div class="slds-truncate" title="Account Name">Include in VAT Group</div>
+                            </th>
+                            <th class="" style="width: 3.75rem;" scope="col">
+                              <div class="slds-truncate" title="Close Date">Make Primary Company</div>
+                            </th>
+                        </thead>
+                        <tbody>
+                          <tr class="slds-hint-parent">
+                            <th data-label="Account" scope="row">
+                              <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 1</a></div>
+                            </th>
+                            <td data-label="Account Name">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <div class="slds-checkbox">
+                                            <input type="checkbox" name="options" id="checkbox-1" value="checkbox-1" />
+                                            <label class="slds-checkbox__label" for="checkbox-1">
+                                                <span class="slds-checkbox_faux"></span>
+                                                <span class="slds-form-element__label"></span>
+                                            </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </td>
+                            <td data-label="Close Date">
+                                <fieldset class="slds-form-element">
+                                      <div class="slds-form-element__control">
+                                        <span class="slds-radio">
+                                            <input type="radio" id="radio-1" name="options" value="radio-1" />
+                                            <label class="slds-radio__label" for="radio-1">
+                                                <span class="slds-radio_faux"></span>
+                                        </span>
+                                    </div>
+                                </fieldset>   
+                            </td>
+                          </tr>
+                          <tr class="slds-hint-parent">
+                                <th data-label="Account" scope="row">
+                                  <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 2</a></div>
+                                </th>
+                                <td data-label="Account Name">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <div class="slds-checkbox">
+                                                <input type="checkbox" name="options" id="checkbox-3" value="checkbox-3" />
+                                                <label class="slds-checkbox__label" for="checkbox-3">
+                                                    <span class="slds-checkbox_faux"></span>
+                                                    <span class="slds-form-element__label"></span>
+                                                </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </td>
+                                <td data-label="Close Date">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-2" name="options" value="radio-2" />
+                                                    <label class="slds-radio__label" for="radio-2">
+                                                        <span class="slds-radio_faux"></span>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                </td>
+                              </tr>
+                              <tr class="slds-hint-parent">
+                                    <th data-label="Account" scope="row">
+                                      <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 3</a></div>
+                                    </th>
+                                    <td data-label="Account Name">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <div class="slds-checkbox">
+                                                    <input type="checkbox" name="options" id="checkbox-5" value="checkbox-5" />
+                                                    <label class="slds-checkbox__label" for="checkbox-5">
+                                                        <span class="slds-checkbox_faux"></span>
+                                                        <span class="slds-form-element__label"></span>
+                                                    </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </td>
+                                    <td data-label="Close Date">
+                                            <fieldset class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <span class="slds-radio">
+                                                        <input type="radio" id="radio-3" name="options" value="radio-3" />
+                                                        <label class="slds-radio__label" for="radio-3">
+                                                            <span class="slds-radio_faux"></span>
+                                                    </span>
+                                                </div>
+                                            </fieldset>
+                                    </td>
+                                  </tr>
+                                  <tr class="slds-hint-parent">
                                         <th data-label="Account" scope="row">
-                                          <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 1</a></div>
+                                          <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 4</a></div>
                                         </th>
                                         <td data-label="Account Name">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
                                                         <div class="slds-checkbox">
-                                                        <input type="checkbox" name="options" id="checkbox-1" value="checkbox-1" />
-                                                        <label class="slds-checkbox__label" for="checkbox-1">
+                                                        <input type="checkbox" name="options" id="checkbox-7" value="checkbox-7" />
+                                                        <label class="slds-checkbox__label" for="checkbox-7">
                                                             <span class="slds-checkbox_faux"></span>
                                                             <span class="slds-form-element__label"></span>
                                                         </label>
@@ -762,27 +857,27 @@
                                                 </div>
                                         </td>
                                         <td data-label="Close Date">
-                                            <fieldset class="slds-form-element">
-                                                 <div class="slds-form-element__control">
-                                                    <span class="slds-radio">
-                                                        <input type="radio" id="radio-1" name="options" value="radio-1" />
-                                                        <label class="slds-radio__label" for="radio-1">
-                                                            <span class="slds-radio_faux"></span>
-                                                    </span>
-                                                </div>
-                                            </fieldset>   
+                                                <fieldset class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="slds-radio">
+                                                            <input type="radio" id="radio-4" name="options" value="radio-4" />
+                                                            <label class="slds-radio__label" for="radio-4">
+                                                                <span class="slds-radio_faux"></span>
+                                                        </span>
+                                                    </div>
+                                                </fieldset>
                                         </td>
                                       </tr>
                                       <tr class="slds-hint-parent">
                                             <th data-label="Account" scope="row">
-                                              <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 2</a></div>
+                                              <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 5</a></div>
                                             </th>
                                             <td data-label="Account Name">
                                                     <div class="slds-form-element">
                                                         <div class="slds-form-element__control">
                                                             <div class="slds-checkbox">
-                                                            <input type="checkbox" name="options" id="checkbox-3" value="checkbox-3" />
-                                                            <label class="slds-checkbox__label" for="checkbox-3">
+                                                            <input type="checkbox" name="options" id="checkbox-9" value="checkbox-9" />
+                                                            <label class="slds-checkbox__label" for="checkbox-9">
                                                                 <span class="slds-checkbox_faux"></span>
                                                                 <span class="slds-form-element__label"></span>
                                                             </label>
@@ -794,8 +889,8 @@
                                                     <fieldset class="slds-form-element">
                                                         <div class="slds-form-element__control">
                                                             <span class="slds-radio">
-                                                                <input type="radio" id="radio-2" name="options" value="radio-2" />
-                                                                <label class="slds-radio__label" for="radio-2">
+                                                                <input type="radio" id="radio-5" name="options" value="radio-5" />
+                                                                <label class="slds-radio__label" for="radio-5">
                                                                     <span class="slds-radio_faux"></span>
                                                             </span>
                                                         </div>
@@ -804,14 +899,14 @@
                                           </tr>
                                           <tr class="slds-hint-parent">
                                                 <th data-label="Account" scope="row">
-                                                  <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 3</a></div>
+                                                  <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 6</a></div>
                                                 </th>
                                                 <td data-label="Account Name">
                                                         <div class="slds-form-element">
                                                             <div class="slds-form-element__control">
                                                                 <div class="slds-checkbox">
-                                                                <input type="checkbox" name="options" id="checkbox-5" value="checkbox-5" />
-                                                                <label class="slds-checkbox__label" for="checkbox-5">
+                                                                <input type="checkbox" name="options" id="checkbox-10" value="checkbox-10" />
+                                                                <label class="slds-checkbox__label" for="checkbox-10">
                                                                     <span class="slds-checkbox_faux"></span>
                                                                     <span class="slds-form-element__label"></span>
                                                                 </label>
@@ -823,104 +918,21 @@
                                                         <fieldset class="slds-form-element">
                                                             <div class="slds-form-element__control">
                                                                 <span class="slds-radio">
-                                                                    <input type="radio" id="radio-3" name="options" value="radio-3" />
-                                                                    <label class="slds-radio__label" for="radio-3">
+                                                                    <input type="radio" id="radio-6" name="options" value="radio-6" />
+                                                                    <label class="slds-radio__label" for="radio-6">
                                                                         <span class="slds-radio_faux"></span>
                                                                 </span>
                                                             </div>
                                                         </fieldset>
                                                 </td>
                                               </tr>
-                                              <tr class="slds-hint-parent">
-                                                    <th data-label="Account" scope="row">
-                                                      <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 4</a></div>
-                                                    </th>
-                                                    <td data-label="Account Name">
-                                                            <div class="slds-form-element">
-                                                                <div class="slds-form-element__control">
-                                                                    <div class="slds-checkbox">
-                                                                    <input type="checkbox" name="options" id="checkbox-7" value="checkbox-7" />
-                                                                    <label class="slds-checkbox__label" for="checkbox-7">
-                                                                        <span class="slds-checkbox_faux"></span>
-                                                                        <span class="slds-form-element__label"></span>
-                                                                    </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                    </td>
-                                                    <td data-label="Close Date">
-                                                            <fieldset class="slds-form-element">
-                                                                <div class="slds-form-element__control">
-                                                                    <span class="slds-radio">
-                                                                        <input type="radio" id="radio-4" name="options" value="radio-4" />
-                                                                        <label class="slds-radio__label" for="radio-4">
-                                                                            <span class="slds-radio_faux"></span>
-                                                                    </span>
-                                                                </div>
-                                                            </fieldset>
-                                                    </td>
-                                                  </tr>
-                                                  <tr class="slds-hint-parent">
-                                                        <th data-label="Account" scope="row">
-                                                          <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 5</a></div>
-                                                        </th>
-                                                        <td data-label="Account Name">
-                                                                <div class="slds-form-element">
-                                                                    <div class="slds-form-element__control">
-                                                                        <div class="slds-checkbox">
-                                                                        <input type="checkbox" name="options" id="checkbox-9" value="checkbox-9" />
-                                                                        <label class="slds-checkbox__label" for="checkbox-9">
-                                                                            <span class="slds-checkbox_faux"></span>
-                                                                            <span class="slds-form-element__label"></span>
-                                                                        </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                        </td>
-                                                        <td data-label="Close Date">
-                                                                <fieldset class="slds-form-element">
-                                                                    <div class="slds-form-element__control">
-                                                                        <span class="slds-radio">
-                                                                            <input type="radio" id="radio-5" name="options" value="radio-5" />
-                                                                            <label class="slds-radio__label" for="radio-5">
-                                                                                <span class="slds-radio_faux"></span>
-                                                                        </span>
-                                                                    </div>
-                                                                </fieldset>
-                                                        </td>
-                                                      </tr>
-                                                      <tr class="slds-hint-parent">
-                                                            <th data-label="Account" scope="row">
-                                                              <div class="slds-truncate" title="Cloudhub"><a href="javascript:void(0);" tabindex="-1">Company 6</a></div>
-                                                            </th>
-                                                            <td data-label="Account Name">
-                                                                    <div class="slds-form-element">
-                                                                        <div class="slds-form-element__control">
-                                                                            <div class="slds-checkbox">
-                                                                            <input type="checkbox" name="options" id="checkbox-9" value="checkbox-9" />
-                                                                            <label class="slds-checkbox__label" for="checkbox-9">
-                                                                                <span class="slds-checkbox_faux"></span>
-                                                                                <span class="slds-form-element__label"></span>
-                                                                            </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                            </td>
-                                                            <td data-label="Close Date">
-                                                                    <fieldset class="slds-form-element">
-                                                                        <div class="slds-form-element__control">
-                                                                            <span class="slds-radio">
-                                                                                <input type="radio" id="radio-6" name="options" value="radio-6" />
-                                                                                <label class="slds-radio__label" for="radio-6">
-                                                                                    <span class="slds-radio_faux"></span>
-                                                                            </span>
-                                                                        </div>
-                                                                    </fieldset>
-                                                            </td>
-                                                          </tr>
-                                                     
-                                    </tbody>
-                            </table>  
+                                          
+                        </tbody>
+            </table> 
+                      
+              
+          </article>
+
         </div>
     </div>                  
 
